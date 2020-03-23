@@ -24,3 +24,5 @@ Could maybe check the Y position of some areas to determinate if user is on main
 - Could experiment with a slight (user-modifyable) zoom which centers on the driver, as the map is quite large
 
 - Untested on Unix/Mac, but this program does not knowingly use Windows depended references.
+
+- Verify if incoming UDP data is FH4 data, and that only 1 endpoint sends that data. Random data coming in from that port might break the program.

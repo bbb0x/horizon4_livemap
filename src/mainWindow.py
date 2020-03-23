@@ -142,7 +142,7 @@ class MainWindow(wx.Frame):
           gc.SetPen(wx.Pen(wx.Colour(100,0,255,0xff*0.7),cw/8))
           path = gc.CreatePath()
           distance = math.pi/4
-          yaw = self.yaw - math.pi/2 # default orientation is not right, so fixing it here.
+          yaw = self.yaw - math.pi/2 # default orientation is incorrect, so fixing it here.
           path.AddArc(xp,yp,(cw/2)+cw/6,yaw-distance,yaw+distance,True)
     
           gc.DrawPath(path)
